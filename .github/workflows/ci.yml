@@ -24,7 +24,7 @@ jobs:
       run: dotnet restore
       working-directory: SimpleClassLibrary
     - name: Run .NET Code Analysis
-      uses: dotnet/code-analysis@v1
+      uses: dotnet/code-analysis@v3
       id: code-analysis
       with:
         solution: SimpleClassLibrary/SimpleClassLibrary.sln
