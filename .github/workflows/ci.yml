@@ -23,6 +23,13 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
       working-directory: SimpleClassLibrary
+    - name: Run .NET Code Analysis
+      uses: dotnet/code-analysis@v1
+      id: code-analysis
+      with:
+        solution: SimpleClassLibrary/SimpleClassLibrary.sln
+        build-breaking: true
+        all-categories: all
     - name: Build
       run: dotnet build --no-restore
       working-directory: SimpleClassLibrary
