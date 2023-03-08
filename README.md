@@ -1,2 +1,2 @@
 # github-dotnet-cicd
-Simple repository for testing Github Actions
+Simple repository for testing Github Actions and setting up CI/CD
